@@ -29,12 +29,12 @@
         compatible = "zmk,combos";
 
         eisuu {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
         };
 
         kana {
-            bindings = <&kp LS(LANG_HIRAGANA)>;
+            bindings = <&kp INT_HENKAN>;
             key-positions = <18 19>;
         };
 
