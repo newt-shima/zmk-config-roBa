@@ -37,6 +37,21 @@
             bindings = <&kp LS(LANG_HIRAGANA)>;
             key-positions = <18 19>;
         };
+
+        laye2 {
+            bindings = <&to 2>;
+            key-positions = <36 37>;
+        };
+
+        layer1 {
+            bindings = <&to 1>;
+            key-positions = <36 38>;
+        };
+
+        layer3 {
+            bindings = <&to 3>;
+            key-positions = <42 33>;
+        };
     };
 
     macros {
