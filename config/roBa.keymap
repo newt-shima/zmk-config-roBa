@@ -29,7 +29,7 @@
         compatible = "zmk,combos";
 
         eisuu {
-            bindings = <&kp LANG1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <12 13>;
         };
 
@@ -125,7 +125,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
     };
 };
