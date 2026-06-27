@@ -48,11 +48,6 @@
             bindings = <&to 1>;
             key-positions = <36 38>;
         };
-
-        layer3 {
-            bindings = <&to 3>;
-            key-positions = <42 33>;
-        };
     };
 
     macros {
@@ -83,16 +78,16 @@
 &kp Q        &kp L         &kp U         &kp F  &kp PERIOD                                       &kp Y      &kp W  &kp R  &kp Y  &kp P
 &kp E        &kp I         &kp A         &kp O  &kp MINUS    &kp EXCL          &kp RS(NUMBER_8)  &kp K      &kp T  &kp N  &kp S  &kp H
 &mt LSHFT Z  &kp X         &kp C         &kp V  &kp COMMA    &kp QUESTION      &kp RS(NUMBER_9)  &kp G      &kp D  &kp M  &kp J  &kp B
-&kp LCTRL    &kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &lt 1 SPACE  &to 0             &kp BACKSPACE     &kp ENTER                       &lt_to_layer_0 3 ESCAPE
+&kp LCTRL    &kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &lt 1 SPACE  &to 0             &kp BACKSPACE     &kp ENTER                       &to 3
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                  &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &kp BACKSLASH      &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans             &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                  &trans  &trans            &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp RIGHT_BRACKET  &trans  &kp LEFT_BRACKET  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &kp BACKSLASH      &trans  &trans            &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans             &trans                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -112,7 +107,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &to 0
             >;
         };
 
